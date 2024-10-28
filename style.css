@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.animation{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+}
+@keyframes square{
+0%{
+    left: 0;
+    background-color: aqua;
+}
+
+25%{
+  
+    background-color: red;
+    border-radius: 0px;
+    left: 1200px;
+    top: 0;
+}
+50%{
+    background-color: blue;
+   left: 1200px;
+    top: 500px;
+}
+75%{
+    background-color: yellow;
+    top: 500px;
+    left:0 ;
+
+}
+100%{
+    left: 0;
+    top: 0;
+}
+}
